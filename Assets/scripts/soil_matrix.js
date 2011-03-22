@@ -109,7 +109,7 @@ function drainNeighbors(x, y, z){
         if(madeNewWater){
           soil.water += newLevel / soils.length;
         }else{
-          soil.water += (newLevel - newWater.GetComponent("water").oldLevel) / soils.length;
+          soil.water += 0.001;//(newLevel - newWater.GetComponent("water").oldLevel) / soils.length;
         }
       }
       for(empty in empties){

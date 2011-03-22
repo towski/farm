@@ -20,5 +20,5 @@ function setLevel(newLevel){
   //0.5 = 6
   oldLevel = level;
   level = newLevel;
-  transform.position.y = baseLevel + -0.5 + newLevel;
+  transform.position.y = baseLevel + newLevel;
 }

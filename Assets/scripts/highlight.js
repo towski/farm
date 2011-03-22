@@ -1,4 +1,4 @@
-private var toggle = false;
+var toggle = false;
 private var oldColor;
 
 function highlight() {

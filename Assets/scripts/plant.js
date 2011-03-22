@@ -8,7 +8,9 @@ function initialize(mySoil, mySun){
 
 function grow(){
   if(soil.watered()){
-    transform.localScale.y += 0.01;
-    soil.water -= 0.001;
+    if(soil.hasNutrients()){
+      transform.localScale.y += 0.01;
+      soil.drainNutrients();
+    }
   }
 }
